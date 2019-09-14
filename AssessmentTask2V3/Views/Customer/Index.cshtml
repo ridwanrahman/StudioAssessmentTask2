@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<h4>This is the secured customer dashboard.</h4>
+<p>
+    Your personal details are:
+    @foreach (var i in ViewBag.data)
+    {
+    <p>First Name: @i.FirstName</p>
+    <p>Last Name: @i.LastName</p>
+    <p>Email Address: @i.EmailAddress</p>
+    <p>Phone number: @i.PhoneNumber</p>
+}
+    </p>
